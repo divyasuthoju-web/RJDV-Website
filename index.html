@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJDV | Central Air Conditioning</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #172033;
+            background: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 7%;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #123b66;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #172033;
+            font-weight: 500;
+        }
+
+        .hero {
+            min-height: 560px;
+            padding: 100px 7%;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(120deg, #eef7ff, #ffffff);
+        }
+
+        .hero-content {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #123b66;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #526174;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #123b66;
+            color: white;
+        }
+
+        .secondary {
+            border: 1px solid #123b66;
+            color: #123b66;
+        }
+
+        section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #123b66;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #667085;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            background: white;
+        }
+
+        .card h3 {
+            color: #123b66;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #667085;
+            line-height: 1.6;
+        }
+
+        .about {
+            background: #f5f9fc;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.8;
+            color: #526174;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        footer {
+            padding: 30px 7%;
+            text-align: center;
+            background: #123b66;
+            color: white;
+        }
+
+        @media (max-width: 800px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">RJDV</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Advanced Air Conditioning Solutions</h1>
+
+            <p>
+                Engineering and manufacturing reliable central air
+                conditioning solutions for modern commercial and industrial
+                environments.
+            </p>
+
+            <a href="#products" class="button primary">
+                Explore Products
+            </a>
+
+            <a href="#contact" class="button secondary">
+                Request a Quote
+            </a>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="section-title">
+            <h2>Our Solutions</h2>
+            <p>Explore our air conditioning and HVAC solutions.</p>
+        </div>
+
+        <div class="products">
+
+            <div class="card">
+                <h3>Central Air Conditioning</h3>
+                <p>
+                    Efficient centralized cooling solutions designed for
+                    large-scale applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>HVAC Systems</h3>
+                <p>
+                    Engineered HVAC solutions designed for reliable
+                    performance and controlled environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Industrial Cooling</h3>
+                <p>
+                    Cooling solutions for demanding commercial and industrial
+                    applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About RJDV</h2>
+        </div>
+
+        <p>
+            RJDV is a central air conditioning manufacturing company focused
+            on delivering dependable and efficient cooling solutions.
+            Our website will showcase our products, engineering capabilities,
+            projects and manufacturing expertise.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Let's Work Together</h2>
+            <p>
+                Contact RJDV for product information, project requirements
+                and business enquiries.
+            </p>
+        </div>
+
+        <a href="mailto:your@email.com" class="button primary">
+            Contact Us
+        </a>
+    </section>
+
+    <footer>
+        © 2026 RJDV Central Air Conditioning Manufacturing. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
