@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>RJDV | Central Air Conditioning & HVAC Solutions</title>
+    <title>RJDV | HVAC & Air Conditioning Solutions</title>
 
     <meta name="description"
-        content="RJDV provides central air conditioning and HVAC solutions for commercial and industrial applications.">
+        content="RJDV manufactures Air Handling Units, Air Washers, Air Coolers, Scrubbers, Fresh Air Units, Exhaust Air Units, Kitchen Exhaust Blowers, Ducting and HVAC products.">
 
     <style>
+
+        /* =========================
+           RESET
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
         }
 
         html {
@@ -22,83 +26,101 @@
         }
 
         body {
-            background: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
             color: #172033;
+            background: #ffffff;
             line-height: 1.6;
         }
 
-        /* ================= HEADER ================= */
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
-            width: 100%;
-            background: #ffffff;
-            border-bottom: 1px solid #e8edf3;
             position: sticky;
             top: 0;
             z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #e7edf3;
         }
 
         .navbar {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: auto;
-            height: 78px;
-            padding: 0 25px;
+            min-height: 78px;
+            padding: 12px 25px;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 25px;
         }
 
         .logo {
-            font-size: 30px;
-            font-weight: 800;
-            letter-spacing: 2px;
-            color: #0b4f8a;
+            font-size: 31px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #07558c;
         }
 
         .logo span {
-            color: #18a7d8;
+            color: #13a6d8;
         }
 
         nav {
             display: flex;
-            gap: 30px;
+            align-items: center;
+            gap: 25px;
         }
 
         nav a {
-            text-decoration: none;
             color: #172033;
+            font-size: 15px;
             font-weight: 600;
             transition: 0.3s;
         }
 
         nav a:hover {
-            color: #0b79b7;
+            color: #0879b5;
         }
 
-        .quote-btn {
-            background: #0b79b7;
+        .nav-button {
+            background: #0879b5;
             color: white !important;
-            padding: 12px 20px;
-            border-radius: 6px;
+            padding: 11px 19px;
+            border-radius: 5px;
         }
 
-        .quote-btn:hover {
-            background: #075b8c;
+        .nav-button:hover {
+            background: #075b8b;
         }
 
-        /* ================= HERO ================= */
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
-            min-height: 650px;
+            min-height: 690px;
+
             background:
                 linear-gradient(
                     90deg,
-                    rgba(5, 32, 58, 0.95),
-                    rgba(5, 32, 58, 0.72),
-                    rgba(5, 32, 58, 0.25)
+                    rgba(3, 27, 48, 0.96),
+                    rgba(3, 42, 69, 0.78),
+                    rgba(3, 42, 69, 0.25)
                 ),
-                url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1800&q=80");
+                url("https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=2000&q=85");
 
             background-size: cover;
             background-position: center;
@@ -108,84 +130,98 @@
         }
 
         .hero-content {
-            max-width: 1200px;
             width: 100%;
+            max-width: 1250px;
             margin: auto;
             padding: 70px 25px;
             color: white;
         }
 
-        .hero-label {
-            color: #65d4ff;
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 2px;
+        .hero-small {
+            color: #69d7ff;
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 18px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            max-width: 750px;
-            font-size: 60px;
-            line-height: 1.1;
+            max-width: 850px;
+            font-size: 64px;
+            line-height: 1.08;
             margin-bottom: 25px;
         }
 
-        .hero p {
-            max-width: 650px;
+        .hero h1 span {
+            color: #5ed5ff;
+        }
+
+        .hero-text {
+            max-width: 690px;
             font-size: 19px;
-            color: #e4edf5;
+            color: #e3edf5;
             margin-bottom: 35px;
+        }
+
+        .quality {
+            font-size: 16px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            color: #ffffff;
         }
 
         .hero-buttons {
             display: flex;
-            gap: 15px;
             flex-wrap: wrap;
+            gap: 15px;
         }
 
-        .primary-btn,
-        .secondary-btn {
+        .button-primary,
+        .button-secondary {
             display: inline-block;
-            padding: 15px 25px;
-            border-radius: 6px;
-            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 5px;
             font-weight: 700;
             transition: 0.3s;
         }
 
-        .primary-btn {
-            background: #18a7d8;
+        .button-primary {
+            background: #12a7d8;
             color: white;
         }
 
-        .primary-btn:hover {
-            background: #0b79b7;
+        .button-primary:hover {
+            background: #0879b5;
         }
 
-        .secondary-btn {
+        .button-secondary {
             border: 1px solid white;
             color: white;
         }
 
-        .secondary-btn:hover {
+        .button-secondary:hover {
             background: white;
             color: #172033;
         }
 
-        /* ================= COMMON ================= */
+
+        /* =========================
+           COMMON
+        ========================= */
 
         section {
             padding: 90px 25px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: auto;
         }
 
         .section-label {
-            color: #0b79b7;
+            color: #0879b5;
             font-size: 14px;
             font-weight: 800;
             letter-spacing: 2px;
@@ -199,68 +235,20 @@
             margin-bottom: 18px;
         }
 
-        .section-description {
-            max-width: 700px;
+        .section-text {
+            max-width: 750px;
             color: #667085;
             font-size: 17px;
         }
 
-        /* ================= PRODUCTS ================= */
 
-        .products {
-            background: #f5f8fb;
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about {
+            background: #ffffff;
         }
-
-        .products-header {
-            margin-bottom: 45px;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .product-card {
-            background: white;
-            border: 1px solid #e3e9ef;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: 0.3s;
-        }
-
-        .product-card:hover {
-            transform: translateY(-7px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-        }
-
-        .product-image {
-            height: 210px;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .product-content {
-            padding: 28px;
-        }
-
-        .product-content h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-
-        .product-content p {
-            color: #667085;
-            margin-bottom: 18px;
-        }
-
-        .learn-more {
-            color: #0b79b7;
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        /* ================= ABOUT ================= */
 
         .about-grid {
             display: grid;
@@ -270,86 +258,197 @@
         }
 
         .about-image {
-            min-height: 480px;
+            min-height: 470px;
             border-radius: 12px;
 
             background:
                 linear-gradient(
-                    rgba(7, 42, 70, 0.1),
-                    rgba(7, 42, 70, 0.1)
+                    rgba(4, 47, 77, 0.15),
+                    rgba(4, 47, 77, 0.15)
                 ),
-                url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80");
+                url("https://images.unsplash.com/photo-1565608087341-404b25492fee?auto=format&fit=crop&w=1200&q=85");
 
             background-size: cover;
             background-position: center;
         }
 
-        .about-text p {
+        .about-content p {
             color: #667085;
-            margin-bottom: 20px;
             font-size: 17px;
+            margin-bottom: 18px;
         }
 
-        .feature-list {
-            list-style: none;
+        .quality-box {
             margin-top: 25px;
+            padding: 22px;
+            background: #f1f8fc;
+            border-left: 5px solid #0879b5;
         }
 
-        .feature-list li {
-            margin-bottom: 14px;
-            font-weight: 600;
+        .quality-box strong {
+            display: block;
+            color: #07558c;
+            font-size: 18px;
+            margin-bottom: 5px;
         }
 
-        .feature-list li::before {
-            content: "✓";
-            color: #0b79b7;
-            font-weight: bold;
-            margin-right: 10px;
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .products {
+            background: #f4f8fb;
         }
 
-        /* ================= SOLUTIONS ================= */
-
-        .solutions {
-            background: #062d4d;
-            color: white;
+        .section-heading {
+            margin-bottom: 45px;
         }
 
-        .solutions .section-label {
-            color: #65d4ff;
-        }
-
-        .solutions .section-description {
-            color: #c7d6e2;
-        }
-
-        .solution-grid {
-            margin-top: 45px;
-
+        .product-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
-        .solution-card {
-            border: 1px solid rgba(255,255,255,0.15);
-            padding: 30px 22px;
-            border-radius: 10px;
+        .product-card {
+            background: white;
+            border: 1px solid #e1e8ef;
+            border-radius: 9px;
+            padding: 28px 23px;
+            min-height: 185px;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-number {
+            color: #12a7d8;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 13px;
+        }
+
+        .product-card h3 {
+            font-size: 19px;
+            margin-bottom: 9px;
+            color: #172033;
+        }
+
+        .product-card p {
+            color: #6b7785;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           PROJECTS
+        ========================= */
+
+        .projects {
+            background: #062e4d;
+            color: white;
+        }
+
+        .projects .section-label {
+            color: #5ed5ff;
+        }
+
+        .projects .section-text {
+            color: #c9d8e3;
+        }
+
+        .project-grid {
+            margin-top: 45px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .project-card {
+            border: 1px solid rgba(255,255,255,0.14);
             background: rgba(255,255,255,0.04);
+            padding: 30px;
+            border-radius: 9px;
+            transition: 0.3s;
         }
 
-        .solution-card h3 {
+        .project-card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
             margin-bottom: 10px;
+            font-size: 21px;
         }
 
-        .solution-card p {
-            color: #c7d6e2;
+        .project-card p {
+            color: #c9d8e3;
             font-size: 15px;
         }
 
-        /* ================= WHY RJDV ================= */
+
+        /* =========================
+           SERVICES
+        ========================= */
+
+        .services {
+            background: #ffffff;
+        }
+
+        .service-grid {
+            margin-top: 45px;
+
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            border: 1px solid #e1e8ef;
+            border-radius: 9px;
+            padding: 27px 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: #12a7d8;
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 17px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: #eaf7fc;
+            color: #0879b5;
+            border-radius: 50%;
+
+            font-weight: 800;
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           WHY RJDV
+        ========================= */
 
         .why {
-            background: #ffffff;
+            background: #f4f8fb;
         }
 
         .why-grid {
@@ -361,16 +460,17 @@
         }
 
         .why-card {
-            padding: 30px;
-            border: 1px solid #e5eaf0;
-            border-radius: 10px;
+            background: white;
+            padding: 32px;
+            border-radius: 9px;
+            border: 1px solid #e1e8ef;
         }
 
         .why-number {
             font-size: 30px;
-            font-weight: 800;
-            color: #0b79b7;
-            margin-bottom: 15px;
+            font-weight: 900;
+            color: #0879b5;
+            margin-bottom: 12px;
         }
 
         .why-card h3 {
@@ -381,14 +481,17 @@
             color: #667085;
         }
 
-        /* ================= CTA ================= */
+
+        /* =========================
+           CTA
+        ========================= */
 
         .cta {
             background:
                 linear-gradient(
-                    90deg,
-                    #0b79b7,
-                    #063c65
+                    100deg,
+                    #0879b5,
+                    #05385e
                 );
 
             color: white;
@@ -396,36 +499,43 @@
         }
 
         .cta h2 {
-            font-size: 42px;
+            font-size: 43px;
             margin-bottom: 15px;
         }
 
         .cta p {
-            max-width: 650px;
+            max-width: 700px;
             margin: 0 auto 30px;
-            color: #e4f3fb;
+            color: #e3f2f9;
         }
 
-        .cta .primary-btn {
+        .cta .button-primary {
             background: white;
-            color: #075b8c;
+            color: #07558c;
         }
 
-        /* ================= FOOTER ================= */
+
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
-            background: #071c2c;
+            background: #071d2e;
             color: white;
-            padding: 55px 25px 25px;
+            padding: 60px 25px 25px;
         }
 
         .footer-grid {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: auto;
 
             display: grid;
             grid-template-columns: 2fr 1fr 1fr;
-            gap: 50px;
+            gap: 60px;
+        }
+
+        footer .logo {
+            color: white;
         }
 
         footer h3 {
@@ -435,7 +545,6 @@
         footer p,
         footer a {
             color: #aebdca;
-            text-decoration: none;
         }
 
         footer a {
@@ -444,72 +553,69 @@
         }
 
         .copyright {
-            max-width: 1200px;
-            margin: 40px auto 0;
+            max-width: 1250px;
+            margin: 45px auto 0;
             padding-top: 20px;
             border-top: 1px solid rgba(255,255,255,0.12);
-            color: #8798a7;
-            font-size: 14px;
+            color: #8194a3;
+            font-size: 13px;
         }
 
-        /* ================= MOBILE ================= */
 
-        @media (max-width: 900px) {
+        /* =========================
+           RESPONSIVE
+        ========================= */
 
-            nav {
-                gap: 12px;
-            }
-
-            nav a {
-                font-size: 14px;
-            }
+        @media (max-width: 1000px) {
 
             .hero h1 {
-                font-size: 45px;
+                font-size: 50px;
             }
 
-            .product-grid,
-            .why-grid {
-                grid-template-columns: 1fr 1fr;
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .solution-grid {
-                grid-template-columns: 1fr 1fr;
+            .service-grid {
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .about-grid {
                 grid-template-columns: 1fr;
             }
 
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
-        @media (max-width: 600px) {
+
+        @media (max-width: 700px) {
 
             .navbar {
-                height: auto;
-                padding-top: 18px;
-                padding-bottom: 18px;
                 flex-direction: column;
-                gap: 15px;
+                padding: 18px 20px;
             }
 
             nav {
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 13px;
+            }
+
+            nav a {
+                font-size: 13px;
             }
 
             .hero {
-                min-height: 600px;
+                min-height: 620px;
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 40px;
             }
 
-            .hero p {
+            .hero-text {
                 font-size: 16px;
             }
 
@@ -518,74 +624,104 @@
             }
 
             .product-grid,
-            .why-grid,
-            .solution-grid,
-            .footer-grid {
+            .project-grid,
+            .service-grid,
+            .why-grid {
                 grid-template-columns: 1fr;
             }
 
             .about-image {
-                min-height: 350px;
+                min-height: 330px;
             }
 
             .cta h2 {
                 font-size: 32px;
             }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
         }
+
     </style>
 </head>
 
+
 <body>
 
-<!-- ================= HEADER ================= -->
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
+
     <div class="navbar">
 
-        <div class="logo">
+        <a href="#home" class="logo">
             RJD<span>V</span>
-        </div>
+        </a>
 
         <nav>
+
             <a href="#home">Home</a>
+
             <a href="#products">Products</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#services">Services</a>
+
             <a href="#about">About</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#contact" class="quote-btn">Request a Quote</a>
+
+            <a href="#contact" class="nav-button">
+                Contact Us
+            </a>
+
         </nav>
 
     </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero" id="home">
 
     <div class="hero-content">
 
-        <div class="hero-label">
-            Central Air Conditioning & HVAC
+        <div class="hero-small">
+            HVAC • Air Conditioning • Manufacturing
         </div>
 
         <h1>
-            Engineering Better
-            Climate Solutions.
+            Complete HVAC &
+            <span>Air Conditioning</span>
+            Solutions
         </h1>
 
-        <p>
-            RJDV delivers reliable air conditioning and HVAC solutions
-            designed for modern commercial and industrial environments.
+        <p class="hero-text">
+            RJDV manufactures air handling and air distribution
+            products and undertakes HVAC, Central AC, clean room,
+            ventilation and air cooling projects.
         </p>
+
+        <div class="quality">
+            QUALITY IS OUR ASSURANCE
+        </div>
 
         <div class="hero-buttons">
 
-            <a href="#products" class="primary-btn">
+            <a href="#products" class="button-primary">
                 Explore Products
             </a>
 
-            <a href="#contact" class="secondary-btn">
-                Talk to Our Team
+            <a href="#contact" class="button-secondary">
+                Enquire Now
             </a>
 
         </div>
@@ -595,114 +731,12 @@
 </section>
 
 
-<!-- ================= PRODUCTS ================= -->
 
-<section class="products" id="products">
+<!-- =========================
+     ABOUT
+========================= -->
 
-    <div class="container">
-
-        <div class="products-header">
-
-            <div class="section-label">
-                Our Products
-            </div>
-
-            <h2 class="section-title">
-                Air Conditioning Solutions
-            </h2>
-
-            <p class="section-description">
-                Explore RJDV's range of air conditioning and HVAC
-                solutions. Product categories and specifications can
-                be updated with your company's actual offerings.
-            </p>
-
-        </div>
-
-
-        <div class="product-grid">
-
-            <div class="product-card">
-
-                <div class="product-image"
-                    style="background-image:url('https://images.unsplash.com/photo-1631545806609-6c5d6f3b2b8d?auto=format&fit=crop&w=900&q=80');">
-                </div>
-
-                <div class="product-content">
-
-                    <h3>Central Air Conditioning</h3>
-
-                    <p>
-                        Central cooling solutions for large buildings
-                        and commercial environments.
-                    </p>
-
-                    <a href="#contact" class="learn-more">
-                        Enquire Now →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image"
-                    style="background-image:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80');">
-                </div>
-
-                <div class="product-content">
-
-                    <h3>HVAC Systems</h3>
-
-                    <p>
-                        Integrated heating, ventilation and air
-                        conditioning solutions for modern facilities.
-                    </p>
-
-                    <a href="#contact" class="learn-more">
-                        Enquire Now →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="product-card">
-
-                <div class="product-image"
-                    style="background-image:url('https://images.unsplash.com/photo-1565608087341-404b25492fee?auto=format&fit=crop&w=900&q=80');">
-                </div>
-
-                <div class="product-content">
-
-                    <h3>Industrial Cooling</h3>
-
-                    <p>
-                        Cooling solutions designed for demanding
-                        industrial environments.
-                    </p>
-
-                    <a href="#contact" class="learn-more">
-                        Enquire Now →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about">
+<section class="about" id="about">
 
     <div class="container">
 
@@ -710,35 +744,39 @@
 
             <div class="about-image"></div>
 
-            <div class="about-text">
+            <div class="about-content">
 
                 <div class="section-label">
                     About RJDV
                 </div>
 
                 <h2 class="section-title">
-                    Building Reliable
-                    Cooling Solutions
+                    Manufacturing HVAC
+                    Solutions for Modern Requirements
                 </h2>
 
                 <p>
-                    RJDV is focused on delivering air conditioning
-                    and HVAC solutions for modern commercial and
-                    industrial requirements.
+                    RJDV is a manufacturer of air handling,
+                    air cooling, air movement and air distribution
+                    products for HVAC and related applications.
                 </p>
 
                 <p>
-                    Our approach combines engineering, manufacturing
-                    and customer-focused service to create dependable
-                    climate-control solutions.
+                    Along with manufacturing, RJDV undertakes
+                    Central AC, HVAC, clean room, air cooling,
+                    ventilation and kitchen exhaust projects.
                 </p>
 
-                <ul class="feature-list">
-                    <li>Engineering-focused solutions</li>
-                    <li>Quality-driven manufacturing</li>
-                    <li>Customer-focused approach</li>
-                    <li>Commercial & industrial applications</li>
-                </ul>
+                <div class="quality-box">
+
+                    <strong>
+                        QUALITY IS OUR ASSURANCE
+                    </strong>
+
+                    We focus on delivering reliable products
+                    and solutions for every project.
+
+                </div>
 
             </div>
 
@@ -749,58 +787,147 @@
 </section>
 
 
-<!-- ================= SOLUTIONS ================= -->
 
-<section class="solutions" id="solutions">
+<!-- =========================
+     PRODUCTS
+========================= -->
+
+<section class="products" id="products">
 
     <div class="container">
 
-        <div class="section-label">
-            Applications
+        <div class="section-heading">
+
+            <div class="section-label">
+                Our Products
+            </div>
+
+            <h2 class="section-title">
+                HVAC & Air Handling Products
+            </h2>
+
+            <p class="section-text">
+                RJDV manufactures a range of air handling,
+                ventilation, ducting and air distribution products.
+            </p>
+
         </div>
 
-        <h2 class="section-title">
-            Solutions for Different Environments
-        </h2>
 
-        <p class="section-description">
-            RJDV solutions can be adapted for different commercial
-            and industrial applications based on project requirements.
-        </p>
+        <div class="product-grid">
 
 
-        <div class="solution-grid">
-
-            <div class="solution-card">
-                <h3>Commercial</h3>
-                <p>
-                    Climate-control solutions for commercial buildings
-                    and business environments.
-                </p>
+            <div class="product-card">
+                <div class="product-number">01</div>
+                <h3>Air Handling Units</h3>
+                <p>Air handling equipment for HVAC applications.</p>
             </div>
 
-            <div class="solution-card">
-                <h3>Industrial</h3>
-                <p>
-                    Cooling solutions for industrial environments
-                    and operational facilities.
-                </p>
+
+            <div class="product-card">
+                <div class="product-number">02</div>
+                <h3>Air Washers</h3>
+                <p>Air washing and conditioning equipment.</p>
             </div>
 
-            <div class="solution-card">
-                <h3>Institutional</h3>
-                <p>
-                    HVAC solutions for institutions and large facilities.
-                </p>
+
+            <div class="product-card">
+                <div class="product-number">03</div>
+                <h3>Air Coolers</h3>
+                <p>Air cooling solutions for different applications.</p>
             </div>
 
-            <div class="solution-card">
-                <h3>Custom Projects</h3>
-                <p>
-                    Project-specific solutions based on engineering
-                    and site requirements.
-                </p>
+
+            <div class="product-card">
+                <div class="product-number">04</div>
+                <h3>Scrubbers</h3>
+                <p>Air treatment and scrubbing equipment.</p>
             </div>
+
+
+            <div class="product-card">
+                <div class="product-number">05</div>
+                <h3>Fresh Air Units</h3>
+                <p>Fresh air supply solutions for ventilation systems.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">06</div>
+                <h3>Exhaust Air Units</h3>
+                <p>Exhaust air solutions for ventilation applications.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">07</div>
+                <h3>Kitchen Exhaust Blowers</h3>
+                <p>Exhaust equipment for commercial kitchens.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">08</div>
+                <h3>Kitchen Chimneys</h3>
+                <p>Kitchen exhaust and extraction solutions.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">09</div>
+                <h3>Ducting</h3>
+                <p>Ducting solutions for air distribution systems.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">10</div>
+                <h3>Aluminium Grilles</h3>
+                <p>Air distribution grilles for HVAC applications.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">11</div>
+                <h3>GI VDC</h3>
+                <p>Volume control solutions for air distribution.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">12</div>
+                <h3>Round Dampers</h3>
+                <p>Airflow control components for duct systems.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">13</div>
+                <h3>Backdraft Dampers</h3>
+                <p>Dampers for controlling reverse airflow.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">14</div>
+                <h3>Diffusers</h3>
+                <p>Air distribution components for HVAC systems.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">15</div>
+                <h3>Louvers</h3>
+                <p>Airflow and ventilation louver solutions.</p>
+            </div>
+
+
+            <div class="product-card">
+                <div class="product-number">16</div>
+                <h3>Filters</h3>
+                <p>Air filtration products for HVAC applications.</p>
+            </div>
+
 
         </div>
 
@@ -809,7 +936,221 @@
 </section>
 
 
-<!-- ================= WHY RJDV ================= -->
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="projects" id="projects">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Our Projects
+            </div>
+
+            <h2 class="section-title">
+                HVAC Projects We Undertake
+            </h2>
+
+            <p class="section-text">
+                RJDV undertakes complete HVAC and air conditioning
+                projects based on project requirements.
+            </p>
+
+        </div>
+
+
+        <div class="project-grid">
+
+
+            <div class="project-card">
+
+                <h3>Central AC Projects</h3>
+
+                <p>
+                    Central air conditioning projects for
+                    commercial and large-scale applications.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>HVAC Projects</h3>
+
+                <p>
+                    HVAC design and project execution for
+                    required applications.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Clean Room Projects</h3>
+
+                <p>
+                    HVAC and air management solutions for
+                    clean room environments.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Air Cooling Projects</h3>
+
+                <p>
+                    Air cooling solutions designed around
+                    project requirements.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Ventilation Projects</h3>
+
+                <p>
+                    Fresh air and exhaust ventilation systems
+                    for different environments.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Kitchen Exhaust Projects</h3>
+
+                <p>
+                    Kitchen exhaust and ventilation solutions
+                    including suitable air movement systems.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                Our Services
+            </div>
+
+            <h2 class="section-title">
+                Engineering & Installation Services
+            </h2>
+
+            <p class="section-text">
+                RJDV provides engineering and project-related
+                services for HVAC and air conditioning applications.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    01
+                </div>
+
+                <h3>
+                    HVAC Designing
+                </h3>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    02
+                </div>
+
+                <h3>
+                    Duct Designing
+                </h3>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    03
+                </div>
+
+                <h3>
+                    AHU Installation
+                </h3>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    04
+                </div>
+
+                <h3>
+                    Insulation
+                </h3>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">
+                    05
+                </div>
+
+                <h3>
+                    Acoustics
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHY RJDV
+========================= -->
 
 <section class="why">
 
@@ -820,21 +1161,26 @@
         </div>
 
         <h2 class="section-title">
-            Designed Around Your Requirements
+            Quality-Focused HVAC Solutions
         </h2>
 
 
         <div class="why-grid">
 
+
             <div class="why-card">
 
-                <div class="why-number">01</div>
+                <div class="why-number">
+                    01
+                </div>
 
-                <h3>Engineering Approach</h3>
+                <h3>
+                    Manufacturing
+                </h3>
 
                 <p>
-                    Solutions are developed around the technical
-                    and operational requirements of each project.
+                    RJDV manufactures a wide range of HVAC,
+                    air handling and air distribution products.
                 </p>
 
             </div>
@@ -842,13 +1188,17 @@
 
             <div class="why-card">
 
-                <div class="why-number">02</div>
+                <div class="why-number">
+                    02
+                </div>
 
-                <h3>Quality Focus</h3>
+                <h3>
+                    Project Solutions
+                </h3>
 
                 <p>
-                    A focus on dependable products and consistent
-                    manufacturing processes.
+                    We undertake Central AC, HVAC, clean room,
+                    ventilation, air cooling and kitchen exhaust projects.
                 </p>
 
             </div>
@@ -856,16 +1206,21 @@
 
             <div class="why-card">
 
-                <div class="why-number">03</div>
+                <div class="why-number">
+                    03
+                </div>
 
-                <h3>Customer Support</h3>
+                <h3>
+                    Quality
+                </h3>
 
                 <p>
-                    A customer-focused approach from enquiry through
-                    project execution and support.
+                    Quality is our assurance and remains central
+                    to our products and project solutions.
                 </p>
 
             </div>
+
 
         </div>
 
@@ -874,25 +1229,35 @@
 </section>
 
 
-<!-- ================= CTA ================= -->
+
+<!-- =========================
+     CONTACT / CTA
+========================= -->
 
 <section class="cta" id="contact">
 
     <div class="container">
 
         <h2>
-            Have a Project in Mind?
+            Have an HVAC Project?
         </h2>
 
         <p>
-            Tell us about your air conditioning or HVAC requirement
-            and our team can discuss the appropriate solution.
+            Get in touch with RJDV to discuss your Central AC,
+            HVAC, clean room, ventilation, air cooling or
+            kitchen exhaust requirements.
         </p>
 
-        <!-- Replace the email below with RJDV's actual email -->
+        <!--
+        IMPORTANT:
+        Replace the email below with the actual RJDV email.
+        -->
 
-        <a href="mailto:your@email.com" class="primary-btn">
+        <a href="mailto:your@email.com"
+           class="button-primary">
+
             Request a Quote
+
         </a>
 
     </div>
@@ -900,21 +1265,31 @@
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
     <div class="footer-grid">
 
+
         <div>
 
-            <div class="logo" style="color:white;">
+            <div class="logo">
                 RJD<span>V</span>
             </div>
 
             <p style="margin-top:15px;">
-                Central air conditioning and HVAC solutions
-                for commercial and industrial applications.
+                HVAC and air conditioning manufacturing,
+                projects and engineering solutions.
+            </p>
+
+            <p style="margin-top:12px;">
+                <strong style="color:white;">
+                    QUALITY IS OUR ASSURANCE
+                </strong>
             </p>
 
         </div>
@@ -922,39 +1297,59 @@
 
         <div>
 
-            <h3>Navigation</h3>
+            <h3>
+                Quick Links
+            </h3>
 
             <a href="#home">Home</a>
+
             <a href="#products">Products</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#services">Services</a>
+
             <a href="#about">About</a>
-            <a href="#solutions">Solutions</a>
 
         </div>
 
 
         <div>
 
-            <h3>Contact</h3>
+            <h3>
+                Contact
+            </h3>
 
-            <!-- Replace these placeholders with actual information -->
+            <!--
+            Replace these with the actual RJDV details.
+            -->
 
-            <p>Email: divyasuthoju@email.com</p>
-            <p>Phone: +91 8712193930</p>
-            <p>Location: India</p>
+            <p>
+                Email: creativeairsystem@email.com
+            </p>
+
+            <p>
+                Phone: +91 9908211930,+91 7801000046
+            </p>
+
+            <p>
+                Location: India
+            </p>
 
         </div>
+
 
     </div>
 
 
     <div class="copyright">
 
-        © 2026 RJDV Central Air Conditioning Manufacturing.
-        All Rights Reserved.
+        © 2026 RJDV. All Rights Reserved.
 
     </div>
 
 </footer>
+
 
 </body>
 </html>
